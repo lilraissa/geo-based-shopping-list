@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:hint="@string/select_location"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:autoText="true"
+        android:background="@drawable/edittext_location"
+        android:hint="@string/reminder_name_eingeben"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/eventDetails"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:autoText="true"
+            android:background="@drawable/edittext_location"
+            android:hint="@string/event_details_eingeben"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+            android:id="@+id/addReminder_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/button_set_location"
+            android:gravity="center"
+            android:text="@string/addReminderbutton"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancelReminder_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/button_set_location"
+            android:gravity="center"
+            android:text="@string/cancelReminderbutton"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

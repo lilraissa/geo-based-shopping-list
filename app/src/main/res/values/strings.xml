@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MyShoppingList</string>
+    <string name="editText">EditText</string>
+    <string name="resultats">Resultat</string>
+    <string name="listname">Einkaufliste Name</string>
+    <string name="cancellist">Abbrechen</string>
+    <string name="listadd">Hinzufügen</string>
+    <string name="listview">Eine neue Liste erstellen...</string>
+    <string name="menuTitel">Einkauflisten</string>
+    <string name="add">Add</string>
+    <string name="start_delete">Start delete</string>
+    <string name="delete">Delete</string>
+    <string name="add_random">Add Random</string>
+    <string name="addArtikel">+ Artikel hinzufügen</string>
+
+    <string name="add_shopping_list">Eine neue  Einkaufliste </string>
+    <string name="appbar_scrolling_view_behavior">appbar</string>
+    <string name="artikelerstellen">Artikel suchen oder hinzufügen</string>
+    <string name="addArtikelNameText">ADD</string>
+    <string name="addLocation">Location hinzufügen</string>
+    <string name="location_textView">Laden, Location:</string>
+    <string name="setLocation">Ladenstandort auf Karte setzen</string>
+    <string name="addLocationbutton">OK</string>
+    <string name="cancelLocationbutton">Cancel</string>
+    <string name="Standorteingeben">Standortname eingeben</string>
+    <string name="gps_network_not_enabled">GPS Network not enabled</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyCFI_u0BXHUAZuvNoRHSBNoWx5RETbFj6o</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="find">Suchen</string>
+    <string name="hint">Location eingeben</string>
+    <string name="addReminder">Reminder hinzufügen</string>
+    <string name="tab1">+ Artikel</string>
+    <string name="tab2">+ Location</string>
+    <string name="tab3">+ Reminder</string>
+    <string name="action_artikel">Artikel</string>
+    <string name="action_clear_artikel_log">clear Artikel log</string>
+    <string name="addConfig">Config</string>
+    <string name="detail">Woran möchten Sie erinnert werden?</string>
+    <string name="select_location">Wählen Sie einen Standort</string>
+    <string name="reminder_name_eingeben">Reminder Name eingeben</string>
+    <string name="reminder_details_eingeben">Woran möchten Sie erinnert werden?</string>
+    <string name="cancelRebutton">Cancel</string>
+    <string name="addReminderbutton">Ok</string>
+    <string name="event_details_eingeben">Woran möchten Sie erinnert werden?</string>
+    <string name="cancelReminderbutton">Cancel</string>
+</resources>

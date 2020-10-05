@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/textview_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/location_textView"
+            android:textSize="15sp"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_location"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:autoText="true"
+            android:background="@drawable/edittext_location"
+            android:hint="@string/Standorteingeben"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/setLocation_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_set_location"
+            android:text="@string/setLocation"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addLocation_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_set_location"
+            android:gravity="center"
+            android:text="@string/addLocationbutton"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancelLocation_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_set_location"
+            android:gravity="center"
+            android:text="@string/cancelLocationbutton"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

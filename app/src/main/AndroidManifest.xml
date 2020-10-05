@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shoppinglist.de.fh_dortmund.com.shoppinglist">
+
+    <permission
+        android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="in.wptrafficanalyzer.locationattouchedpositionv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:versionCode="1">
+
+
+        <service
+            android:name=".service.GeofenceTransitionsIntentService"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCFI_u0BXHUAZuvNoRHSBNoWx5RETbFj6o" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ListViewExampleActivity"
+            android:label="@string/menuTitel"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.AddArtikelMainActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.viewPager.CustomTabActivity"
+            android:parentActivityName=".activity.AddArtikelMainActivity" />
+        <activity
+            android:name=".activity.AddArtikelActivity"
+            android:parentActivityName=".activity.AddArtikelMainActivity"
+            android:launchMode="standard"/>
+        <activity
+            android:name=".activity.LocationActivity"
+            android:parentActivityName=".activity.AddArtikelMainActivity" />
+
+        <activity
+            android:name=".activity.AddReminderActivity"
+            android:parentActivityName=".activity.AddArtikelMainActivity" />
+
+        <activity
+            android:name=".activity.MapsActivity2"
+            android:label="@string/title_activity_maps2"
+            android:parentActivityName=".activity.LocationActivity"></activity>
+
+        <uses-library android:name="com.google.android.maps" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+    </application>
+
+</manifest>
